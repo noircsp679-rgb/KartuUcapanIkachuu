@@ -1,1 +1,183 @@
-# KartuUcapanIkachuu
+# KartuUcapanIkachuu<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceyamatt Uyangg Tahunn Dedenyaa Achuu!</title>
+  <style>
+    /* Styling Dasar & Tema Warna Biru */
+    :root {
+      --bg-color: #e6f0fa;
+      --card-bg: #ffffff;
+      --primary-blue: #1e88e5;
+      --dark-blue: #0d47a1;
+      --light-blue: #bbdefb;
+      --text-color: #333333;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      background: var(--card-bg);
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(13, 71, 161, 0.15);
+      padding: 30px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Bagian Pembuka */
+    .header h1 {
+      color: var(--dark-blue);
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      color: var(--primary-blue);
+      font-size: 1.1em;
+      margin-top: 0;
+    }
+
+    /* Bagian Musik */
+    .audio-section {
+      background: var(--light-blue);
+      padding: 15px;
+      border-radius: 12px;
+      margin: 25px 0;
+    }
+
+    .audio-section p {
+      margin: 0 0 10px 0;
+      font-weight: bold;
+      color: var(--dark-blue);
+    }
+
+    audio {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Bagian Foto */
+    .photo-section {
+      margin: 25px 0;
+    }
+
+    .photo-frame {
+      width: 100%;
+      max-width: 350px;
+      height: 250px;
+      margin: 0 auto;
+      border-radius: 15px;
+      border: 4px solid var(--primary-blue);
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Bagian Pesan & Penutup */
+    .message-section {
+      line-height: 1.6;
+      margin: 25px 0;
+      font-size: 1.05em;
+    }
+
+    .footer {
+      border-top: 2px dashed var(--light-blue);
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+
+    .footer p {
+      font-weight: bold;
+      color: var(--dark-blue);
+      font-size: 1.2em;
+    }
+
+    /* Tombol Interaktif */
+    .btn {
+      background-color: var(--primary-blue);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--dark-blue);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 1. PEMBUKA -->
+    <div class="header">
+      <h1>Ceyamatt Uyangg Tahunn Dedenyaa Achuu 🎉</h1>
+      <p>tepatt hayii inii ditanggall enamm novemberr yahirr cocokk peyempuann cantikk.</p>
+    </div>
+
+    <!-- 2. LAGU FAVORIT -->
+    <div class="audio-section">
+      <p>🎵 Putar Lagu Favorit</p>
+      <!-- Ganti 'lagu-favorit.mp3' dengan file musikmu -->
+      <audio controls>
+        <source src="ANDMESH - ANUGERAH TERINDAH (OFFICIAL MUSIC VIDEO).mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung pemutar audio.
+      </audio>
+    </div>
+
+    <!-- 3. FOTO -->
+    <div class="photo-section">
+      <div class="photo-frame">
+        <!-- Ganti URL gambar di bawah dengan foto yang kamu inginkan -->
+        <img src="FOTOBERDUATNOR.jpeg" alt="Foto Ulang Tahun">
+      </div>
+    </div>
+
+    <!-- 4. PESAN & PENUTUP -->
+    <div class="message-section">
+      <p>
+        dii hayii yangg cpeciall inii ndutt mendoakann dedee agarr teyuss menjadii peyempuann yangg baikk, cabar,
+        cetiaa, dann tangguhh dann cujaa ndutt mendoakann agarr dedeee mencapaii citaa' dedee membanggakan oyangg tuaa dann keyuargaa dedee
+        ndutt dicinii akann teyuss cupportt dedee apapunn yangg dedee inginnkann ndutt akan beyucahaaa, dicaat dedee cedihh dedee hayuss 
+        ingatt kayoo dedee punyaaa ndutt oceyy?, enamm beyass tahunnn yangg yayuuu dedee yahirr ndutt tidaa pernahh cangkaa akannn dipertemukan
+        dengann cocokk peyempuann baikk cepertii dedee, ndutt cangatt bercyukurr dengann anugerahh yangg Tuhann kiyimkann untukk nduttt, tetapp
+        menjadii peyempuann kecayangann achuu yahh cayangggg yoppyouu coo muchhh dedenyaa achuu muachhh.
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>Ceyamatt Merayakann Hayii Keyahirann cayangggg! 💙</p>
+      <button class="btn" onclick="tampilkanPesan()">Klik untuk Kejutan 🎁</button>
+    </div>
+  </div>
+
+  <script>
+    function tampilkanPesan() {
+      alert("cemogaa diumurr dedee yangg memacukii enamm beyass tahunn akann banyakk kabar bahagiaa yangg datangg ✨");
+    }
+  </script>
+
+</body>
+</html>
